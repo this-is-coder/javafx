@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="counter.CounterController">
+   <children>
+      <Button fx:id="countingButton" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#updateCount" text="0" textAlignment="CENTER">
+         <font>
+            <Font name="KacstDigital" size="37.0" />
+         </font>
+      </Button>
+   </children>
+</GridPane>
