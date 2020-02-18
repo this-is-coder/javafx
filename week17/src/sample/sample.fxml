@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane prefHeight="450.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="trackList" prefHeight="200.0" prefWidth="200.0" />
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="showTrackButton" mnemonicParsing="false" text="Show Tracks" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="playButton" mnemonicParsing="false" onAction="#playTrack" text="Play" />
+            <Button fx:id="nextTrackButton" mnemonicParsing="false" onAction="#nextTrack" text="Next" />
+            <Button fx:id="randomButton" mnemonicParsing="false" onAction="#nextRandom" text="Random" />
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="trackOutTF" alignment="CENTER" editable="false" promptText="Nothing Playing" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
